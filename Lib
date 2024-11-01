@@ -659,7 +659,7 @@ end
 StarterGui:SetCore("SendNotification", {
         Title = "[Roblox Found]",
         Text = "Elemental Attached",
-        Icon = "rbxassetid://127803947002280", 
+        Icon = "rbxassetid://82763127350390", 
         Duration = 5  
     })
 
