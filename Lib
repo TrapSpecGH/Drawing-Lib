@@ -656,8 +656,12 @@ if not game:IsLoaded() then
     game.Loaded:Wait()
 end
 
-print("Elemental has been injected!")
-
+StarterGui:SetCore("SendNotification", {
+        Title = "[Roblox Found]",
+        Text = "Elemental Attached",
+        Icon = "rbxassetid://127803947002280", 
+        Duration = 5  
+    })
 
 local function sendRequest(options, timeout)
 	timeout = tonumber(timeout) or math.huge
