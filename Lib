@@ -657,11 +657,20 @@ if not game:IsLoaded() then
 end
 
 StarterGui:SetCore("SendNotification", {
-        Title = "[Roblox Found]",
-        Text = "Elemental Attached",
-        Icon = "rbxassetid://82763127350390", 
-        Duration = 5  
-    })
+    Title = "[Roblox Found]",
+    Text = "Elemental Attached",
+    Icon = "rbxassetid://82763127350390", 
+    Duration = 5  
+})
+
+local notification = Instance.new("Notification")
+notification.Title = "Injected"
+notification.Text = "Enjoy 93 UNC"
+notification.Icon = "rbxassetid://82763127350390"
+notification.Duration = 3
+notification.Parent = StarterGui
+task.wait(3)
+notification:Destroy()
 
 local function sendRequest(options, timeout)
 	timeout = tonumber(timeout) or math.huge
